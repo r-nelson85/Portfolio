@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="https://kit.fontawesome.com/d9b200fe28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Page</title>
+    
+</head>
+<body>
+  <header class="page-header">
+    <div class="bg-img">
+      <div class="container">
+        <nav>
+          <ul class="navigation-items">
+            <li class="navigation-item"><a href="index.html" > Home </a></li>
+            <li class="navigation-item"><a href="#about-me-section" > About Me </a></li>    
+            <li class="navigation-item"><a href="#projects-section" > Projects </a></li>    
+            <li class="navigation-item"><a href="#contact-section" > Contact </a></li>
+          </nav>    
+        <div class="header-text">
+          <h1>Richard Nelson</h1>
+          <p>Front End Web Designer</p>         
+        </div>    
+      </div>
+    </div>
+  </header>
+  
+  <section id="home-section">
+    <div class="home-title">
+    <h2>Greetings!</h2>
+      <h3>Welcome to my page. Please scroll down or use the links above to see some of my projects, skills, and to learn a little more about me.</h3>
+  </section>
+
+   <section id="about-me-section">
+      <div class="about-me-container">
+        <div class="about-me-text">
+          <h2>About Me</h2>
+          <p>Hi, my name is Richard Nelson. I am from the North East of England, not far from the city of Durham. Right now I am based in South Korea. I have been abroad for a number of years, traveling and woking throughout Asia, but I am moving back to England in the coming months. Hopefully that move will bring a lot of exciting new opportunities for me.<br><br>I am currently self studying front-end web development with codecademy. I have always had a fascination with computers and technology, and I am excited to work within the technology industry. <br><br>I studied Geography at university, and focused mainly on GIS. Using technology to experience the world around us has always been a great interest of mine, and recently, through studying web development, I have ignited a desire to study and learn more about the technology that effects all of our lives.</p>
+          <p>          
+        </div>
+      </div>
+    </section>
+
+    <section id="skills-section">
+      <div class="skills-container">
+        <div class="skills-text">
+          <h2>Skills and Education</h2>
+          <i class="fa-brands fa-html5 fa-2xl" ></i>
+          <i class="fa-brands fa-css3 fa-2xl"></i>
+          <i class="fa-brands fa-js fa-2xl"></i>
+          <i class="fa-brands fa-git-square fa-2xl"></i>
+          <i class="fa-brands fa-apple fa-2xl"></i>
+          <i class="fa-brands fa-windows fa-2xl"></i>
+          <i class="fab fa-github fa-2xl"></i>
+          <i class="fab fa-chrome fa-2xl"></i>
+          <i class="fas fa-terminal fa-2xl"></i>
+          <i class="fab fa-figma fa-2xl"></i>
+        </div>
+      </div>
+    </section>
+
+   <section id="projects-section">
+      <div class="projects-title">
+        <h2>Latest Projects</h2>
+          <h3>These are my most recent web projects:</h3>
+      </div>
+
+      <div class="projects-image-container">
+        <div class="tile" onclick='location.href = "https://github.com/r-nelson85/New-Business-Page";'>
+            <img src="media/Businesspage.png" >
+        </div>
+        <div class="tile" onclick='location.href = "https://github.com/r-nelson85/Club-Page";'>
+            <img src="media/Clubpage.png">
+        </div>
+        <div class="tile" onclick='location.href = "https://github.com/r-nelson85/Fotomatic";'>
+            <img src="media/Fotomatic.png">
+        </div>
+        <div class="tile" onclick='location.href = "https://github.com/r-nelson85/Tea-Cozy-";'>
+            <img src="media/Teacosy.png">
+        </div>
+        <div class="tile" onclick='location.href = "https://github.com/r-nelson85/Club-Page";'>
+            <img src="media/Clubpage.png">
+        </div>
+      </div>
+    </section>
+
+  <section id="contact-section">
+    <div class="contact-container">
+      <h2>Get in touch</h2>
+        <div class="font-aweseome">      
+          <a target="_blank" href="mailto:r_nelson85@hotmail.com">
+            <i class="fa-solid fa-envelope fa-2xl fa-bounce"></i></a>                 
+          <a target="_blank" href="https://github.com/r-nelson85">
+            <i class="fa-brands fa-github fa-2xl fa-bounce" style="--fa-animation-duration: 1.1s;"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/richardnelson85">
+                <i class="fa-brands fa-linkedin fa-2xl fa-bounce"></i></a>
+        </div>
+        <h3>Feel free to contact me with any enquieries or interesting ideas!</h3>  
+    </div>
+  </section>
+
+  <section id="counter">
+    <div id="time-elapsed"></div>
+  </section>
+
+  <script>
+    var startDateTime = new Date(2022,6,9,11,55,0,0); // YYYY (M-1) D H m s (start time and date from DB)
+    var startStamp = startDateTime.getTime();
+
+    var newDate = new Date();
+    var newStamp = newDate.getTime();
+
+    var timer;
+
+    function updateClock() {
+        newDate = new Date();
+        newStamp = newDate.getTime();
+        var diff = Math.round((newStamp-startStamp)/1000);
+        
+        var d = Math.floor(diff/(24*60*60));
+        diff = diff-(d*24*60*60);
+        var h = Math.floor(diff/(60*60));
+        diff = diff-(h*60*60);
+        var m = Math.floor(diff/(60));
+        diff = diff-(m*60);
+        var s = diff;
+        
+        document.getElementById("time-elapsed").innerHTML = d+" days, "+h+" hrs, "+m+" mins, "+s+" secs since this page went live!";
+    }
+
+    setInterval(updateClock, 1000);
+
+  </script>
+
+</body>
+
+</html>
+
