@@ -2,7 +2,7 @@ h1 {
     font-family: 'Rubik';
 }
 
-h2 {
+body h2 {
     font-family: 'Rubik';
     text-decoration: underline #DFC69E;
     font-size: 2rem;
@@ -122,6 +122,8 @@ li {
     text-align: center;
     border-bottom: #DFC69E 2px solid;
 }
+
+
 /* projects section */
 
 
@@ -183,6 +185,7 @@ li {
 /* contact section */
 .contact-container {
     padding-top: 3rem;
+    
     color: #5b6f85;
     text-align: center;
     border-top: #DFC69E 2px solid;
@@ -204,8 +207,7 @@ li {
 body {
     height: 100%;
     margin: 0;
-    background-color: rgb(236, 238, 249);
-    
+    background-color: rgb(236, 238, 249);    
 }
 
 #time-elapsed {
