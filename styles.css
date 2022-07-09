@@ -1,0 +1,220 @@
+h1 {
+    font-family: 'Rubik';
+}
+
+h2 {
+    font-family: 'Rubik';
+    text-decoration: underline #DFC69E;
+    font-size: 2rem;
+    text-align: center;
+    color: #5b6f85;
+}
+
+h3 {
+    font-family: 'Rubik';
+    font-size: 1.5rem;
+    text-align: center;
+    color: #5b6f85; 
+}
+
+.header {   
+    width: 100%;   
+}
+
+/* nav section */
+
+.navigation-items { 
+    display: flex;
+    list-style-type: none;
+    padding: 3px;
+    margin-left: 2rem;
+    min-width: 2rem;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 2px;
+    -webkit-transition: 0.1s ease-in-out;
+	transition: 0.1s ease-in-out;
+    cursor: pointer;  
+}  
+
+.navigation-item:hover {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.2);
+    background-color: #DFC69E;
+    border-radius: 4px;    
+}
+  
+.navigation-item a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li {
+    margin-right: 1.5rem;   
+} 
+
+
+/* hero section */
+    
+.bg-img {
+    background-image: url(media/mountains.jpeg);
+    min-height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    width: 95%;
+    position: absolute;
+    margin: 20px;
+  }
+
+.header-text {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem; 
+    margin-top: 15rem;
+    color: aliceblue;    
+}
+
+
+/* home section */
+#home-section {
+    margin-top: 2rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+#home-section h2 {
+    text-decoration: underline #DFC69E;
+    text-align: center;
+    color: #5b6f85;
+}
+
+/* about me section */
+
+.about-me-container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: #DFC69E 2px solid;
+    border-bottom: #DFC69E 2px solid;
+}
+.about-me-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    color: #5b6f85;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.skills-container {
+    color: #5b6f85;
+    padding: 4rem;
+    text-align: center;
+    border-bottom: #DFC69E 2px solid;
+}
+/* projects section */
+
+
+.projects-title {
+    margin-top: 2rem;
+    color: #5b6f85;
+    padding: 0.5rem;
+}
+
+
+.projects-image-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+    margin: 3rem;   
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    border: solid 4px #DFC69E;
+    border-radius: 5px;
+    cursor:pointer;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.tile:hover img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    -webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.tile:nth-child(1){
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.tile:nth-child(2),
+.tile:nth-child(3){
+    grid-column: span 2;
+}
+
+.tile:nth-child(4),
+.tile:nth-child(5){
+    grid-column: span 3;
+}
+
+.projects-container h3 {
+    text-align: auto;    
+}
+
+/* contact section */
+.contact-container {
+    padding-top: 3rem;
+    padding-left: 4rem;
+    color: #5b6f85;
+    text-align: center;
+    border-top: #DFC69E 2px solid;
+}
+.contact-section h2, h3{
+    padding: 1rem;
+    text-align: center;
+}
+
+.font-aweseome {
+    padding: 5px;
+}
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(236, 238, 249);
+    
+}
+
+#time-elapsed {
+    display: flex;
+    color:#5b6f85;
+    justify-content: right;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    font-size: 20px;
+}
+
